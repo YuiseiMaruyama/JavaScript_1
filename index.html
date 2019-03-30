@@ -25,10 +25,14 @@
     <script>
         'use script';
 
-        document.getElementById('target').addEventListener('click',function(){
+        const target = document.getElementById('target');
+
+        target.addEventListener('click',function(){
             // document.getElementById('target').style.background='pink';
             // document.getElementById('target').style.borderRadius='50%';
-            document.getElementById('target').classList.add('circle');
+
+            //toggleで元の処理に戻る
+            target.classList.toggle('circle');
         });
     </script>
 </body>
